@@ -1,10 +1,11 @@
+import { GiWildfires } from 'react-icons/gi'
 import heroImg1 from '../assets/images/heroImg01.jpg'
 import heroImg2 from '../assets/images/heroImg02.jpg'
 import heroImg3 from '../assets/images/heroImg03.jpg'
 const Home = () => {
   return (
     <>
-      {/* Hero Section  */}
+      {/* Hero Section Starts */}
       <>
         <section className="hero__section pt-[60px] 2xl:h-[800px]">
           <div className="container">
@@ -49,7 +50,7 @@ const Home = () => {
                   <img  src={heroImg3} alt="Hero Image" className='w-full md:w-[250px] object-contain rounded-3xl mb-[30px]'/>
                 </div>
                 <div className='w-full lg:w-[530px] rounded-lg'>
-                <img  src={heroImg1} alt="Hero Image" className='w-full h-[300px] rounded-3xl object-cover'/>
+                <img src={heroImg1} alt="Hero Image" className='w-full h-[300px] rounded-3xl object-cover'/>
                   
                 </div>
           </div>    
@@ -58,6 +59,32 @@ const Home = () => {
         </div>
         </section>
       </>
+      {/* Hero Section Ends */}
+
+      {/* Feature Section Starts  */}
+      <section className="howItWorks__section  2xl:h-[800px]">
+        <div className="container">
+          <div className='lg:w-[470px] mx-auto'>
+         
+            <h2 className='heading text-center'>Are you ready to take a trip?</h2>
+            <p className='text__para text-center'>Worlds Leading Online Tour Booking</p>
+            <div className='mx-auto flex justify-center items-center'>
+            <button className="btn ">Contact Us</button>
+            </div>
+          </div>
+
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
+            <div className='py-[30px] px-5'>
+              <div className='flex items-center justify-center'>
+              <GiWildfires className='w-[100px] h-[100px]'/>
+              </div>
+              <div>
+              <h2 className='text-[26px] leading-9 text-headingColor font-[900] text-center'>Wild Life</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

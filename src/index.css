@@ -32,6 +32,10 @@
   .hero__section {
     @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover;
   }
+
+  .howItWorks__section {
+    @apply bg-[url('./assets/images/howItBg02.jpg')] bg-no-repeat bg-center bg-cover;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
