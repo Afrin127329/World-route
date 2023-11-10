@@ -1,8 +1,8 @@
 # World Route
 
-## Introducing "World Route," an upcoming full-stack travel app that promises to revolutionize your travel experience. Powered by the MERN (MongoDB, Express, React, Node.js) stack, this innovative application is poised to be your go-to solution for all things travel-related.
+### Introducing "World Route," an upcoming full-stack travel app that promises to revolutionize your travel experience. Powered by the MERN (MongoDB, Express, React, Node.js) stack, this innovative application is poised to be your go-to solution for all things travel-related.
 
-**This is an ongoing project, it will be tested with Jest, updation is coming soon.**
+**This is an ongoing project, it will be tested with Jest, updation is coming soon. It can take some loading time on the live site. Kindly wait till the loading is complete**
 
 ## Client App is Bootstrapped with
 
