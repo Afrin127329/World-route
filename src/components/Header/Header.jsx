@@ -72,7 +72,7 @@ const Header = () => {
             </div>
             
             <Link to='/login'>
-              <button className='bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]'>Login</button>
+              <button className='bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] hover:opacity-[0.8] transition-all duration-500 cursor-pointer shadow-shadowtwo'>Login</button>
             </Link>
 
             <span className='md:hidden' onClick={toggleMenu}>

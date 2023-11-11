@@ -1,7 +1,9 @@
-import { GiWildfires } from 'react-icons/gi'
-import heroImg1 from '../assets/images/heroImg01.jpg'
-import heroImg2 from '../assets/images/heroImg02.jpg'
-import heroImg3 from '../assets/images/heroImg03.jpg'
+import { GiMountainRoad, GiParachute, GiWildfires } from 'react-icons/gi';
+import { TbBeach } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
+import heroImg1 from '../assets/images/heroImg01.jpg';
+import heroImg2 from '../assets/images/heroImg02.jpg';
+import heroImg3 from '../assets/images/heroImg03.jpg';
 const Home = () => {
   return (
     <>
@@ -73,14 +75,46 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
-            <div className='py-[30px] px-5'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px] place-items-center'>
+            <div className='py-[30px] px-5 bg-yellowColor rounded-[20px] w-[200px] hover:opacity-[0.8] transition-all duration-500 cursor-pointer shadow-shadowOne'>
+              <Link to='/destinations'>
               <div className='flex items-center justify-center'>
               <GiWildfires className='w-[100px] h-[100px]'/>
               </div>
               <div>
               <h2 className='text-[26px] leading-9 text-headingColor font-[900] text-center'>Wild Life</h2>
+                </div>
+                </Link>
+            </div>
+            <div className='py-[30px] px-5 rounded-[20px] bg-purpleColor w-[200px] hover:opacity-[0.8] transition-all duration-500 cursor-pointer shadow-shadowOne'>
+            <Link to='/destinations'>
+              <div className='flex items-center justify-center'>
+              <TbBeach className='w-[100px] h-[100px]'/>
               </div>
+              <div>
+              <h2 className='text-[26px] leading-9 text-headingColor font-[900] text-center'>Beach Tour</h2>
+                </div>
+                </Link>
+            </div>
+            <div className='py-[30px] px-5 rounded-[20px] bg-irisBlueColor w-[200px] hover:opacity-[0.8] transition-all duration-500 cursor-pointer shadow-shadowOne'>
+            <Link to='/destinations'>
+              <div className='flex items-center justify-center'>
+              <GiMountainRoad className='w-[100px] h-[100px]'/>
+              </div>
+              <div>
+              <h2 className='text-[26px] leading-9 text-headingColor font-[900] text-center'>Adventures</h2>
+                </div>
+                </Link>
+            </div>
+            <div className='py-[30px] px-5 rounded-[20px] bg-red-500 w-[200px] hover:opacity-[0.8] transition-all duration-500 cursor-pointer shadow-shadowOne'>
+              <Link to='/destinations'>
+              <div className='flex items-center justify-center'>
+              <GiParachute className='w-[100px] h-[100px]'/>
+              </div>
+              <div>
+              <h2 className='text-[26px] leading-9 text-headingColor font-[900] text-center'>ParaGuilding</h2>
+              </div>
+              </Link>
             </div>
           </div>
         </div>

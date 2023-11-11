@@ -14,6 +14,9 @@ export default {
   
         boxShadow: {
           panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;",
+          shadowOne: "10px 10px 19px #000000, -10px -10px 19px #fff2f2",
+          shadowtwo: "1px 7px 15px #000000de, 5px -20px 26px #18181800",
+          
         },
       },
     },
