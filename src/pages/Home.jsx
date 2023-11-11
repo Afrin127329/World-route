@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import heroImg1 from '../assets/images/heroImg01.jpg';
 import heroImg2 from '../assets/images/heroImg02.jpg';
 import heroImg3 from '../assets/images/heroImg03.jpg';
+import About from '../components/About/About';
 const Home = () => {
   return (
     <>
@@ -119,6 +120,11 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Feature Section Ends  */}
+
+      {/* About Component   */}
+      <About/>
+
     </>
   )
 }
