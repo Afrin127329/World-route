@@ -10,6 +10,7 @@ import heroImg3 from '../assets/images/heroImg03.jpg';
 import About from '../components/About/About';
 import DestinationList from '../components/Destinations/DestinationList';
 import ServiceList from '../components/Services/ServiceList';
+import TestimonialList from '../components/Testimonial/TestimonialList';
 const Home = () => {
   return (
     <>
@@ -167,17 +168,17 @@ const Home = () => {
             </div>
             {/* Image Section  */}
             <div className='relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0'>
-              <img src={bookingIcon} alt="Booking Image" className='md:h-[600px]'/>
+              <img src={bookingIcon} alt="Booking Image" className='md:h-[600px]' />
 
               <div className='w-[150px] lg:w-[248px] bg-white absolute bottom-[50px] left-0 md:bottom-[100px] md:left-[7.25rem] z-20 p-2 pb-3 lg:pt-4 lg:px-4 lg:pb-[26px] rounded-[10px] shadow-shadowOne'>
-                
+
                 <div className='flex items-center justify-between'>
                   <div className='flex items-center gap-[6px] lg:gap-3'>
                     <p className='text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 text-textColor font-[600]'>Sat, 23</p>
                     <p className='text-[10px] leading-[10px] lg:text-[14px] lg:leading-5 text-textColor font-[400]'>9:00 PM</p>
                   </div>
                   <span className='w-5 h-5 lg:w-[34px] lg:h-[34px] flex items-center justify-center bg-yellowColor rounded py-1 px-[6px] lg:py-3 lg:px-[9px]'>
-                    <BiSolidPhoneCall/>
+                    <BiSolidPhoneCall />
                   </span>
                 </div>
                 <div className='w-[110px] bg-[#CCF0F3] py-1 px-2 lg:py-[6px] lg:px-[10px] text-[8px] leading-[8px] lg:text-[12px] lg:leading-4 text-irisBlueColor font-[500] mt-2 lg:mt-4 rounded-full'>
@@ -185,7 +186,7 @@ const Home = () => {
                 </div>
 
                 <div className='flex items-center gap-[6px] lg:gap-[10px] mt-2 lg:mt-[18px]'>
-                  <img src={avatarImg} alt="Avatar" className='w-[34px] h-[34px] rounded-full'/>
+                  <img src={avatarImg} alt="Avatar" className='w-[34px] h-[34px] rounded-full' />
                   <h4 className='text-[10px] leading-3 lg:text-[16px] lg:leading-[22px] font-[700] text-headingColor'>Robert Johnson</h4>
                 </div>
               </div>
@@ -198,18 +199,34 @@ const Home = () => {
       {/* Destination Section Starts  */}
       <section>
         <div className="container">
-        <div className='xl:w-[470px] mx-auto'>
+          <div className='xl:w-[470px] mx-auto'>
             <h2 className='heading text-center'>Top Destinations</h2>
             <p className='text__para text-center'>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dignissimos. Lorem ipsum dolor sit amet.
             </p>
           </div>
 
-          <DestinationList/>
+          <DestinationList />
         </div>
       </section>
       {/* Destination Section Ends  */}
 
+
+      {/* Testimonial Section Starts  */}
+      <section>
+        <div className="container">
+          <div className='xl:w-[470px] mx-auto'>
+            <h2 className='heading text-center'>What Our Users Say</h2>
+            <p className='text__para text-center'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, delectus! Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+
+          <TestimonialList/>
+
+        </div>
+      </section>
+      {/* Testimonial Section Ends  */}
     </>
   )
 }
