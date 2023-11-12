@@ -8,6 +8,7 @@ import heroImg1 from '../assets/images/heroImg01.jpg';
 import heroImg2 from '../assets/images/heroImg02.jpg';
 import heroImg3 from '../assets/images/heroImg03.jpg';
 import About from '../components/About/About';
+import DestinationList from '../components/Destinations/DestinationList';
 import ServiceList from '../components/Services/ServiceList';
 const Home = () => {
   return (
@@ -203,6 +204,8 @@ const Home = () => {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dignissimos. Lorem ipsum dolor sit amet.
             </p>
           </div>
+
+          <DestinationList/>
         </div>
       </section>
       {/* Destination Section Ends  */}
