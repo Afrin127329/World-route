@@ -49,7 +49,7 @@ const quickLinks02 = [
   },
   {
     path: '/destinations',
-    display: 'Book Now'
+    display: 'Book a Hotel'
   },
   {
     path: '/destinations',
@@ -81,9 +81,9 @@ const Footer = () => {
         <div className='flex justify-between flex-col md:flex-row flex-wrap gap-[30px]'>
           <div>
             <div className='flex items-center text-[24px] font-bold'><TiWorld className='text-primaryColor' /> World Route</div>
-            <p className='text-[16px] leading-7 font-[400] text-textColor mt-4 flex gap-3 items-center'>Copyright <AiOutlineCopyright /> {year} developed by Afrin Nahar | All Rights Reserved</p>
+            <p className='text-[16px] leading-7 font-[400] text-textColor mt-4 flex flex-col md:flex-row gap-3 md:items-center'>Copyright <AiOutlineCopyright /> {year} developed by Afrin Nahar | All Rights Reserved</p>
 
-            <div className='flex items-center gap-3 mt-4'>
+            <div className='flex items-center gap-3 mt-8'>
               {socialLinks.map((link, index) => (
                 <Link to={link.path} key={index} className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] flex items-center justify-center group hover:bg-primaryColor hover:text-white transition-all duration-500 shadow-shadowtwo'>{link.icon}</Link>
             ))}
@@ -92,14 +92,36 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-headingColor'>Quick Links</h2>
+            <h2 className='text-[20px] leading-[30px] font-[700] mb-3 text-headingColor'>Quick Links</h2>
 
             <ul>
-              {quickLinks01.map((item, index) => <li key={index}>
-                <Link to={item.path}>{item.display}</Link>
+              {quickLinks01.map((item, index) => <li key={index} className='py-3'>
+                <Link to={item.path} className='text-[16px] leading-7 font-[700] text-textColor hover:text-primaryColor transition-all duration-500'>{item.display}</Link>
               </li>)}
             </ul>
           </div>
+
+          <div>
+            <h2 className='text-[20px] leading-[30px] font-[700] mb-3 text-headingColor'>I want to: </h2>
+
+            <ul>
+              {quickLinks02.map((item, index) => <li key={index} className='py-3'>
+                <Link to={item.path} className='text-[16px] leading-7 font-[700] text-textColor hover:text-primaryColor transition-all duration-500'>{item.display}</Link>
+              </li>)}
+            </ul>
+          </div>
+
+          <div>
+            <h2 className='text-[20px] leading-[30px] font-[700] mb-3 text-headingColor'>Contacts</h2>
+
+            <ul>
+              {quickLinks03.map((item, index) => <li key={index} className='py-3'>
+                <Link to={item.path} className='text-[16px] leading-7 font-[700] text-textColor hover:text-primaryColor transition-all duration-500'>{item.display}</Link>
+              </li>)}
+            </ul>
+          </div>
+
+
         </div>
       </div>
     </footer>
