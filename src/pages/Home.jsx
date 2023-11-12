@@ -5,6 +5,7 @@ import heroImg1 from '../assets/images/heroImg01.jpg';
 import heroImg2 from '../assets/images/heroImg02.jpg';
 import heroImg3 from '../assets/images/heroImg03.jpg';
 import About from '../components/About/About';
+import ServiceList from '../components/Services/ServiceList';
 const Home = () => {
   return (
     <>
@@ -124,6 +125,21 @@ const Home = () => {
 
       {/* About Component   */}
       <About/>
+
+      {/* Services Section Starts  */}
+      <section>
+        <div className="container">
+          <div className='xl:w-[470px] mx-auto'>
+            <h2 className='heading text-center'>Our Best Services</h2>
+            <p className='text__para text-center'>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, harum. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+
+          <ServiceList/>
+        </div>
+      </section>
+      {/* Services Section Ends  */}
 
     </>
   )

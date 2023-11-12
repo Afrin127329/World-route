@@ -12,7 +12,7 @@ const About = () => {
                     <div className='h-[100vh]'>
                       <img src={AboutImg01} alt="About" className='w-[200px] border-black border-[10px] rotate-[20deg] rounded-md'/>
                       <img src={AboutImg02} alt="About" className='w-[300px] lg:w-[400px] rounded-md border-black border-[10px]'/>
-                      <img src={AboutImg03} alt="About" className='w-[200px] border-black border-[10px] rotate-[20deg] absolute right-0 lg:right-[295px] rounded-md' />
+                      <img src={AboutImg03} alt="About" className='w-[200px] border-black border-[10px] rotate-[20deg] absolute right-0 lg:right-[160px] rounded-md' />
                       </div>
                     </div>
                   {/* About Content  */}
